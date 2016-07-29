@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+
+    <!--第一帧-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/index_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!-- Title-->
+        <include layout="@layout/title" />
+        <!-- 唱片版面-->
+        <include layout="@layout/pan_layout" />
+        <!--文字选择框及待选框-->
+        <include layout="@layout/name_select"/>
+    </LinearLayout>
+    <!--第二帧，显示悬浮按钮-->
+    <include layout="@layout/float_buttons"/>
+    <!--第三帧，过关显示页面-->
+    <include layout="@layout/answer_right"/>
+
+</FrameLayout>
